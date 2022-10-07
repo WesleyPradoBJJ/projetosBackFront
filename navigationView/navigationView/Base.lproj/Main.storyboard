@@ -24,7 +24,7 @@
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Hvc-0z-WP9" kind="show" identifier="screen02VC" id="s6Y-lO-NPt"/>
+                                    <action selector="goScreen02Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z1s-We-nO0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgm-sC-ReD">
@@ -36,7 +36,7 @@
                                     <color key="baseForegroundColor" systemColor="systemBrownColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="lIg-js-WJv" kind="show" identifier="screen03VC" id="7rg-8g-Hug"/>
+                                    <action selector="goScreen03Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9d-Kg-J7P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,26 +53,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1043.0769230769231" y="-28.436018957345969"/>
-        </scene>
-        <!--screen02VC-->
-        <scene sceneID="ee5-ly-Daa">
-            <objects>
-                <viewControllerPlaceholder storyboardName="screen02VC" id="Hvc-0z-WP9" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="p3V-i9-UcT"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iOM-xr-wCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1827" y="-132"/>
-        </scene>
-        <!--screen03VC-->
-        <scene sceneID="fOY-cl-U9p">
-            <objects>
-                <viewControllerPlaceholder storyboardName="screen03VC" id="lIg-js-WJv" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="NH4-1x-7Eh"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rWi-bj-Lwz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1872" y="91"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gTv-7x-ZPH">

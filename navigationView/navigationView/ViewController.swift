@@ -9,8 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var goScreen02: UIButton!
-    @IBOutlet weak var goScreen03: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +16,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func goScreen02Tapped(_ sender: Any) {
-        performSegue(withIdentifier: "screen02VC", sender: nil)
+       //exibindo modal de maneira programática
+        let vc: screen02VC? = UIStoryboard(name: "screen02VC", bundle: nil).instantiateViewController(withIdentifier: "screen02VC") as? screen02VC
+        //o present exibe a modal
+        present (vc ?? UIViewController(), animated: true)
+        
+        //Exibindo NAVIGATION de maneiro programática
+        //let vc = UIStoryboard(name: "screen02VC", bundle: nil).instantiateViewController(withIdentifier: "screen02VC") as? screen02VC
+        //Present exibe a tela do controller
+        //navigationController?.pushViewController(vc ?? UIViewController(), animanted: true
     }
    
     @IBAction func goScreen03Tapped(_ sender: Any) {
-        performSegue(withIdentifier: "screen03VC", sender: nil)
+        let vc: screen03VC? = UIStoryboard(name: "screen03VC", bundle: nil).instantiateViewController(withIdentifier: "screen03VC") as? screen03VC
+        present (vc ?? UIViewController(), animated: true)
     }
     
 }
