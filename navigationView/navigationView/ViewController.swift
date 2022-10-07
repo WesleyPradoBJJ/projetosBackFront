@@ -9,11 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var goScreen02: UIButton!
+    @IBOutlet weak var goScreen03: UIButton!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func goScreen02Tapped(_ sender: Any) {
+        performSegue(withIdentifier: "goScreen02", sender: nil)
+    }
+    
+    @IBAction func goScreen03Tapped(_ sender: Any) {
+        performSegue(withIdentifier: "goScreen03", sender: nil)
+    }
+    
+    
+    
 }
 

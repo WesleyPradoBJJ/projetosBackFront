@@ -16,25 +16,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-E4-uRj">
-                                <rect key="frame" x="158" y="405" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-E4-uRj">
+                                <rect key="frame" x="20" y="197" width="350" height="50"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="goScreen02">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goScreen02Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GBQ-8s-v1y"/>
+                                    <segue destination="WWd-8P-ex4" kind="show" identifier="goScreen02" id="i8Y-2W-URb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDz-3G-pKo">
+                                <rect key="frame" x="20" y="287" width="350" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="goScreen03">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goScreen03Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ovg-vN-2Is"/>
+                                    <segue destination="ize-Gx-Ouz" kind="show" identifier="goScreen03" id="RZI-Us-59K"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="2hl-E4-uRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0tn-fH-fiy"/>
+                            <constraint firstItem="WDz-3G-pKo" firstAttribute="top" secondItem="2hl-E4-uRj" secondAttribute="bottom" constant="40" id="HG2-YA-isS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WDz-3G-pKo" secondAttribute="trailing" constant="20" id="NlF-fq-p4E"/>
+                            <constraint firstItem="2hl-E4-uRj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="YzT-mr-oIK"/>
+                            <constraint firstItem="WDz-3G-pKo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aZc-oz-MLg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2hl-E4-uRj" secondAttribute="trailing" constant="20" id="oe7-WF-wbw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goScreen02" destination="2hl-E4-uRj" id="Ulu-H0-4b2"/>
+                        <outlet property="goScreen03" destination="WDz-3G-pKo" id="QcK-M9-FL0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113.84615384615384" y="-28.436018957345969"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uFT-4b-i7H">
+            <objects>
+                <viewController id="WWd-8P-ex4" customClass="ViewController" customModule="navigationView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vfr-c9-mJC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lKF-nu-Hse"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7vT-iq-3b8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvy-0f-Opv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="-28"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p2R-pT-OC1">
+            <objects>
+                <viewController id="ize-Gx-Ouz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZ6-Ea-dhh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sO3-UQ-onC"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c3j-Rx-p9M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBv-5z-UDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="704"/>
+        </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
