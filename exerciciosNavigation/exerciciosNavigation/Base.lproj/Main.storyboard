@@ -26,7 +26,9 @@
                                     <color key="baseForegroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="IwZ-t8-QzB" kind="show" id="yBx-jU-bzA"/>
+                                    <action selector="buttonToScreen02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfz-Ba-Py3"/>
+                                    <action selector="goScreen02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRr-Nu-OZn"/>
+                                    <segue destination="XKr-6n-4lb" kind="show" id="QFl-Kl-SkT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,33 +40,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TPX-Ix-Bas"/>
+                    <connections>
+                        <outlet property="goScreen02" destination="fCc-mO-gC4" id="98U-pI-Gun"/>
+                        <outlet property="goToScreen02" destination="fCc-mO-gC4" id="og2-Ro-5qb"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1060" y="-28.436018957345969"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="EtH-ww-V3P">
+        <!--Tela02VC-->
+        <scene sceneID="BXd-ki-d3d">
             <objects>
-                <viewController id="IwZ-t8-QzB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Po1-lX-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-QR-PKh">
-                                <rect key="frame" x="86" y="320" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vFl-kQ-NcF"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                        <color key="tintColor" systemColor="systemPinkColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5jz-tQ-Z0c"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lee-C3-1FK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Tela02VC" id="XKr-6n-4lb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uJP-zA-mjo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pkN-et-glL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1918" y="-21"/>
+            <point key="canvasLocation" x="1822" y="-58"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Idn-d2-KBT">
@@ -86,16 +78,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark.seal.fill" catalog="system" width="128" height="124"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

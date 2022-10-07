@@ -13,6 +13,8 @@
 		3AC2D9CF28EF8F6B001DC804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2D9CD28EF8F6B001DC804 /* Main.storyboard */; };
 		3AC2D9D128EF8F6C001DC804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2D9D028EF8F6C001DC804 /* Assets.xcassets */; };
 		3AC2D9D428EF8F6C001DC804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2D9D228EF8F6C001DC804 /* LaunchScreen.storyboard */; };
+		3AC2D9E228EFB38C001DC804 /* Tela02VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2D9E128EFB38C001DC804 /* Tela02VC.swift */; };
+		3AC2D9E428EFB39D001DC804 /* Tela02VC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2D9E328EFB39D001DC804 /* Tela02VC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3AC2D9D028EF8F6C001DC804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AC2D9D328EF8F6C001DC804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AC2D9D528EF8F6C001DC804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC2D9E128EFB38C001DC804 /* Tela02VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02VC.swift; sourceTree = "<group>"; };
+		3AC2D9E328EFB39D001DC804 /* Tela02VC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02VC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				3AC2D9D028EF8F6C001DC804 /* Assets.xcassets */,
 				3AC2D9D228EF8F6C001DC804 /* LaunchScreen.storyboard */,
 				3AC2D9D528EF8F6C001DC804 /* Info.plist */,
+				3AC2D9E128EFB38C001DC804 /* Tela02VC.swift */,
+				3AC2D9E328EFB39D001DC804 /* Tela02VC.storyboard */,
 			);
 			path = exerciciosNavigation;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				3AC2D9D428EF8F6C001DC804 /* LaunchScreen.storyboard in Resources */,
 				3AC2D9D128EF8F6C001DC804 /* Assets.xcassets in Resources */,
 				3AC2D9CF28EF8F6B001DC804 /* Main.storyboard in Resources */,
+				3AC2D9E428EFB39D001DC804 /* Tela02VC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 			files = (
 				3AC2D9CC28EF8F6B001DC804 /* ViewController.swift in Sources */,
 				3AC2D9C828EF8F6B001DC804 /* AppDelegate.swift in Sources */,
+				3AC2D9E228EFB38C001DC804 /* Tela02VC.swift in Sources */,
 				3AC2D9CA28EF8F6B001DC804 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
