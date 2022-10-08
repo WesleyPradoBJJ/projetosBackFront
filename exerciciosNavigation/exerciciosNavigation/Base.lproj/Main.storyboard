@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exerciciosNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
@@ -26,9 +25,8 @@
                                     <color key="baseForegroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonToScreen02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfz-Ba-Py3"/>
-                                    <action selector="goScreen02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRr-Nu-OZn"/>
-                                    <segue destination="XKr-6n-4lb" kind="show" id="QFl-Kl-SkT"/>
+                                    <action selector="goTela02Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eC-dk-eRy"/>
+                                    <segue destination="XKr-6n-4lb" kind="show" identifier="Tela02VC" id="QFl-Kl-SkT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,17 +39,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="TPX-Ix-Bas"/>
                     <connections>
-                        <outlet property="goScreen02" destination="fCc-mO-gC4" id="98U-pI-Gun"/>
-                        <outlet property="goToScreen02" destination="fCc-mO-gC4" id="og2-Ro-5qb"/>
+                        <outlet property="goTela02Button" destination="fCc-mO-gC4" id="gcW-A1-s0a"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060" y="-28.436018957345969"/>
         </scene>
         <!--Tela02VC-->
         <scene sceneID="BXd-ki-d3d">
             <objects>
-                <viewControllerPlaceholder storyboardName="Tela02VC" id="XKr-6n-4lb" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Tela02VC" storyboardName="Tela02VC" id="XKr-6n-4lb" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="uJP-zA-mjo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkN-et-glL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

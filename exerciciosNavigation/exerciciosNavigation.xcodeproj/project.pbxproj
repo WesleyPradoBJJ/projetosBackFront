@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AC1396128F1068F00E1092D /* Tela02VC */ = {
+			isa = PBXGroup;
+			children = (
+				3AC2D9E128EFB38C001DC804 /* Tela02VC.swift */,
+				3AC2D9E328EFB39D001DC804 /* Tela02VC.storyboard */,
+			);
+			path = Tela02VC;
+			sourceTree = "<group>";
+		};
 		3AC2D9BB28EF8F6B001DC804 = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +73,10 @@
 				3AC2D9C928EF8F6B001DC804 /* SceneDelegate.swift */,
 				3AC2D9CB28EF8F6B001DC804 /* ViewController.swift */,
 				3AC2D9CD28EF8F6B001DC804 /* Main.storyboard */,
+				3AC1396128F1068F00E1092D /* Tela02VC */,
 				3AC2D9D028EF8F6C001DC804 /* Assets.xcassets */,
 				3AC2D9D228EF8F6C001DC804 /* LaunchScreen.storyboard */,
 				3AC2D9D528EF8F6C001DC804 /* Info.plist */,
-				3AC2D9E128EFB38C001DC804 /* Tela02VC.swift */,
-				3AC2D9E328EFB39D001DC804 /* Tela02VC.storyboard */,
 			);
 			path = exerciciosNavigation;
 			sourceTree = "<group>";

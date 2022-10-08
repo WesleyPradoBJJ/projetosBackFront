@@ -10,8 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var goScreen02: UIButton!
-    
+    @IBOutlet weak var goTela02Button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +18,11 @@ class ViewController: UIViewController {
     }
 
     
-    @IBAction func goScreen02(_ sender: Any) {
+    @IBAction func goTela02Button(_ sender: UIButton) {
         performSegue(withIdentifier: "Tela02VC", sender: nil)
     }
     
+    
 }
+
 
