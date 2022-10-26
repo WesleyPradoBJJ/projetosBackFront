@@ -10,8 +10,8 @@ import UIKit
 class ViewController: UIViewController {
 
     // Passo a passo
-    // Criar a TableView
-    // Fazer a ligação
+    // Criar a TableView no main.storyboard
+    // Fazer a ligação IBoutlet no VC
     // Configurar a tableview ( chamar o método dentro do ViewDidLoad)
     // Criar célular (Arquivo XIB)
     // Configurar Celula
