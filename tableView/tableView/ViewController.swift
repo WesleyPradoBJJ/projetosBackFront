@@ -41,14 +41,14 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource{
     // Indicar a quantidade de linhas por sessão
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return data.count
     }
     //Popular a célula
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: NameTableViewCell.identifier, for: <#T##IndexPath#>) as? NameTableViewCell
-        
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: NameTableViewCell.identifier, for: indexPath) as? NameTableViewCell
+        cell?.setupCell(name: data[indexPath.row])
+        return cell ?? UITableViewCell()
     }
 }
 

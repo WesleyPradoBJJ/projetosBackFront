@@ -36,12 +36,8 @@ class NameTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    // Método inútil
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
+    func setupCell(name: String) {
+        nameLabel.text = name
+    }
     
-    //func
 }
