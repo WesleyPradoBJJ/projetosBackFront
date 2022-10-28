@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let data: [Brand] = [
+    var data: [Brand] = [
     Brand(brand: "AUDI", image: UIImage(named: "audi") ?? UIImage()),
     Brand(brand: "BENTLEY", image: UIImage(named: "bentley") ?? UIImage()),
     Brand(brand: "JAGUAR", image: UIImage(named: "jaguar") ?? UIImage()),
@@ -46,9 +46,20 @@ extension ViewController: UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
     
-    // Seta o tamanho das imagens na row! 
+    // Seta o tamanho das imagens na row!
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
+    }
+    
+    //Permite edições na row
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    //método me permite remover um item da lista.
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        data.remove(at: indexPath.row)
+        tableView.reloadData() 
     }
 }
 
