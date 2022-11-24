@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NotificationCenterEProtocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_apple" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-j6-1hr">
+                                <rect key="frame" x="71.666666666666686" y="256" width="250" height="200"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="aN6-gF-ipS"/>
+                                    <constraint firstAttribute="width" constant="250" id="bMh-54-XUa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfI-5x-AXx">
+                                <rect key="frame" x="20" y="486" width="353" height="26.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyY-2l-KKq">
+                                <rect key="frame" x="30" y="738" width="333" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XVC-Hh-gbe"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clique Aqui!">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedChooseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZ0-jo-6y6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="UfI-5x-AXx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1im-RN-KO1"/>
+                            <constraint firstItem="y5U-j6-1hr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dwq-o3-TSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yyY-2l-KKq" secondAttribute="bottom" constant="30" id="Ued-dO-LVH"/>
+                            <constraint firstItem="yyY-2l-KKq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="cu8-o5-yAe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UfI-5x-AXx" secondAttribute="trailing" constant="20" id="hU3-50-IHT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yyY-2l-KKq" secondAttribute="trailing" constant="30" id="nzr-J5-hiF"/>
+                            <constraint firstItem="UfI-5x-AXx" firstAttribute="top" secondItem="y5U-j6-1hr" secondAttribute="bottom" constant="30" id="s9m-m4-o88"/>
+                            <constraint firstItem="y5U-j6-1hr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="xNS-Vb-mb5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="yyY-2l-KKq" id="tvZ-r9-QhD"/>
+                        <outlet property="logoImageView" destination="y5U-j6-1hr" id="Yvu-84-en1"/>
+                        <outlet property="nameLabel" destination="UfI-5x-AXx" id="3Y7-wy-rSx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+        <!--Selection View Controller-->
+        <scene sceneID="vok-o1-cXD">
+            <objects>
+                <viewController storyboardIdentifier="SelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nrp-an-NTG" customClass="SelectionViewController" customModule="NotificationCenterEProtocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jcp-bC-Zqr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opções: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnL-Nb-KFD">
+                                <rect key="frame" x="30" y="109" width="333" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="Hys-u5-34H">
+                                <rect key="frame" x="81.666666666666686" y="249" width="230" height="354"/>
+                                <subviews>
+                                    <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoB-A2-cS9">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="150"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="JKA-V6-KkR"/>
+                                            <constraint firstAttribute="height" constant="150" id="hrd-TI-GVE"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button" image="Macbook">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedMacbookButton:" destination="nrp-an-NTG" eventType="touchUpInside" id="0eD-UF-u6c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ot-Ab-chS">
+                                        <rect key="frame" x="0.0" y="204" width="230" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="Tnl-N1-U4h"/>
+                                            <constraint firstAttribute="height" constant="150" id="tju-tx-dfl"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Imac">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedImacButton:" destination="nrp-an-NTG" eventType="touchUpInside" id="Xah-tI-tXt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PDH-oe-jUR"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hys-u5-34H" firstAttribute="centerY" secondItem="Jcp-bC-Zqr" secondAttribute="centerY" id="931-fA-lbp"/>
+                            <constraint firstItem="Hys-u5-34H" firstAttribute="centerX" secondItem="Jcp-bC-Zqr" secondAttribute="centerX" id="YcF-1H-Td8"/>
+                            <constraint firstItem="YnL-Nb-KFD" firstAttribute="leading" secondItem="PDH-oe-jUR" secondAttribute="leading" constant="30" id="cEK-Qe-usE"/>
+                            <constraint firstItem="PDH-oe-jUR" firstAttribute="trailing" secondItem="YnL-Nb-KFD" secondAttribute="trailing" constant="30" id="gRh-u0-dSz"/>
+                            <constraint firstItem="YnL-Nb-KFD" firstAttribute="top" secondItem="PDH-oe-jUR" secondAttribute="top" constant="50" id="sEt-Dz-jZG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imacButton" destination="4ot-Ab-chS" id="A4x-DO-vV9"/>
+                        <outlet property="macbookButton" destination="LoB-A2-cS9" id="Mar-ie-xy8"/>
+                        <outlet property="titleLabel" destination="YnL-Nb-KFD" id="v1A-65-ev5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIx-Kc-yCK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Imac" width="512" height="512"/>
+        <image name="Macbook" width="1499" height="802"/>
+        <image name="logo_apple" width="244" height="300"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
