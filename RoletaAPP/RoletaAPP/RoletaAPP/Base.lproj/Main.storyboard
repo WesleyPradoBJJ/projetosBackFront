@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bs0-bf-MyV">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="pfS-iM-wSy">
+            <objects>
+                <viewController id="klX-xd-OCn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IS4-d3-Bul">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Sjg-2f-wDb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="yKF-8F-sid"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqg-yc-h0Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="591"/>
+        </scene>
+        <!--Roleta-->
+        <scene sceneID="bBd-RW-Bkm">
+            <objects>
+                <viewController id="dAL-YW-QDW" customClass="ViewController" customModule="RoletaAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZKU-X8-Di3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="fD8-GN-mQq">
+                                <rect key="frame" x="40" y="99" width="313" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="e5k-GX-DUY"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v1b-p1-2jy">
+                                <rect key="frame" x="25" y="329" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGS-fa-U1z">
+                                <rect key="frame" x="25" y="388" width="343" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="38N-XZ-Box"/>
+                                    <constraint firstAttribute="height" constant="45" id="WnE-Nt-q95"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sortear!"/>
+                                <connections>
+                                    <action selector="tappedDrawNumberButton:" destination="dAL-YW-QDW" eventType="touchUpInside" id="YLo-77-127"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qSc-Y5-zqg">
+                                <rect key="frame" x="0.0" y="443" width="393" height="326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xbL-s6-fpD"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v1b-p1-2jy" firstAttribute="top" secondItem="fD8-GN-mQq" secondAttribute="bottom" constant="30" id="4yW-uC-hv1"/>
+                            <constraint firstItem="xbL-s6-fpD" firstAttribute="trailing" secondItem="qSc-Y5-zqg" secondAttribute="trailing" id="FWh-g6-wCF"/>
+                            <constraint firstItem="xbL-s6-fpD" firstAttribute="trailing" secondItem="TGS-fa-U1z" secondAttribute="trailing" constant="25" id="MUs-1K-o9g"/>
+                            <constraint firstItem="xbL-s6-fpD" firstAttribute="trailing" secondItem="v1b-p1-2jy" secondAttribute="trailing" constant="25" id="NS5-Pg-mVy"/>
+                            <constraint firstItem="fD8-GN-mQq" firstAttribute="leading" secondItem="xbL-s6-fpD" secondAttribute="leading" constant="40" id="QGm-nO-jqM"/>
+                            <constraint firstItem="qSc-Y5-zqg" firstAttribute="top" secondItem="TGS-fa-U1z" secondAttribute="bottom" constant="10" id="WzH-iD-DKB"/>
+                            <constraint firstItem="v1b-p1-2jy" firstAttribute="leading" secondItem="xbL-s6-fpD" secondAttribute="leading" constant="25" id="YRx-Ma-FDH"/>
+                            <constraint firstItem="qSc-Y5-zqg" firstAttribute="leading" secondItem="xbL-s6-fpD" secondAttribute="leading" id="Ym2-Z6-tf2"/>
+                            <constraint firstItem="TGS-fa-U1z" firstAttribute="leading" secondItem="xbL-s6-fpD" secondAttribute="leading" constant="25" id="d5M-bY-R2S"/>
+                            <constraint firstItem="fD8-GN-mQq" firstAttribute="top" secondItem="xbL-s6-fpD" secondAttribute="top" constant="40" id="hwN-tf-05g"/>
+                            <constraint firstItem="xbL-s6-fpD" firstAttribute="trailing" secondItem="fD8-GN-mQq" secondAttribute="trailing" constant="40" id="kPd-cL-alX"/>
+                            <constraint firstItem="TGS-fa-U1z" firstAttribute="top" secondItem="v1b-p1-2jy" secondAttribute="bottom" constant="25" id="mDd-kV-pJJ"/>
+                            <constraint firstItem="xbL-s6-fpD" firstAttribute="bottom" secondItem="qSc-Y5-zqg" secondAttribute="bottom" id="ngX-wG-RBo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Roleta" id="EAC-T8-pcK"/>
+                    <connections>
+                        <outlet property="drawNumberButton" destination="TGS-fa-U1z" id="eqe-by-FUR"/>
+                        <outlet property="logoAppImageView" destination="fD8-GN-mQq" id="p3R-NP-dcD"/>
+                        <outlet property="nameTextField" destination="v1b-p1-2jy" id="pkI-Nz-iaC"/>
+                        <outlet property="tableView" destination="qSc-Y5-zqg" id="Clm-5W-xjI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4w-hc-Fw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="-94"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="faO-U6-yHm">
+            <objects>
+                <tabBarController id="bs0-bf-MyV" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3bM-6s-dwN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dAL-YW-QDW" kind="relationship" relationship="viewControllers" id="uyv-Q1-i5d"/>
+                        <segue destination="klX-xd-OCn" kind="relationship" relationship="viewControllers" id="fDA-25-eeF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKd-HX-iKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-932" y="244"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
