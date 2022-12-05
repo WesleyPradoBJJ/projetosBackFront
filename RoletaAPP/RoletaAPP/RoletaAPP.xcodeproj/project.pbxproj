@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A660C2A293E4434006BD4F7 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A660C29293E4434006BD4F7 /* AlertController.swift */; };
 		3AADDCC62938D1A10020CFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADDCC52938D1A10020CFF8 /* AppDelegate.swift */; };
 		3AADDCC82938D1A10020CFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADDCC72938D1A10020CFF8 /* SceneDelegate.swift */; };
 		3AADDCCA2938D1A10020CFF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADDCC92938D1A10020CFF8 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A660C29293E4434006BD4F7 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		3AADDCC22938D1A10020CFF8 /* RoletaAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoletaAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AADDCC52938D1A10020CFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AADDCC72938D1A10020CFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A660C28293E43D4006BD4F7 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				3A660C29293E4434006BD4F7 /* AlertController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		3AADDCB92938D1A10020CFF8 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		3AADDCC42938D1A10020CFF8 /* RoletaAPP */ = {
 			isa = PBXGroup;
 			children = (
+				3A660C28293E43D4006BD4F7 /* Alert */,
 				3AADDCE42939AEF90020CFF8 /* Model */,
 				3AADDCD92938DB2E0020CFF8 /* Cell */,
 				3AADDCC52938D1A10020CFF8 /* AppDelegate.swift */,
@@ -191,6 +202,7 @@
 				3AADDCCA2938D1A10020CFF8 /* ViewController.swift in Sources */,
 				3AADDCDC2938DB4A0020CFF8 /* EmptyTableViewCell.swift in Sources */,
 				3AADDCC62938D1A10020CFF8 /* AppDelegate.swift in Sources */,
+				3A660C2A293E4434006BD4F7 /* AlertController.swift in Sources */,
 				3AADDCE22939A8BB0020CFF8 /* PersonTableViewCell.swift in Sources */,
 				3AADDCC82938D1A10020CFF8 /* SceneDelegate.swift in Sources */,
 			);

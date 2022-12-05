@@ -18,12 +18,15 @@ class ViewController: UIViewController {
     
     var listPerson: [Person] = []
     var listImage: [String] = ["Image-1", "Image-2", "Image-3", "Image-4", "Image-5"]
-    
+    var person: Person?
+    var alert: AlertController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        alert = AlertController(controller: self)
         configTableView()
         configTextAndColors()
+        blockedDrawButton()
     }
 
     
@@ -42,14 +45,40 @@ class ViewController: UIViewController {
         tableView.register(PersonTableViewCell.nib(), forCellReuseIdentifier: PersonTableViewCell.identifier)
     }
     
+    func blockedDrawButton() {
+        if listPerson.isEmpty{
+            drawNumberButton.isEnabled = false
+            drawNumberButton.alpha = 0.5
+        } else {
+            drawNumberButton.isEnabled = true
+            drawNumberButton.alpha = 1
+        }
+    }
+    
     @IBAction func tappedDrawNumberButton(_ sender: UIButton) {
-        
+        self.person = listPerson.randomElement()
+        dump(person)
     }
     
 }
 
 extension ViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Tenho que cirar uma lógica de quem foi pressionado se foi sorteado ou não
+        // se sim -> apresentar um alert
+        // se não -> deletar usuário
+        dump(self.listPerson[indexPath.row])
+        if self.listPerson[indexPath.row] === self.person {
+            print("Parabéns você foi sorteado, pague a conta!")
+            alert?.showAlert(title: "Muito bom!", message: "Agora é sua vez de pagar a conta!")
+            listPerson.removeAll()
+        } else {
+            print("Uffa, você escapou!")
+            listPerson.remove(at: indexPath.row)
+        }
+        blockedDrawButton()
+        tableView.reloadData()
+    }
 }
 
 
@@ -85,8 +114,12 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
-        tableView.reloadData()
+        if !(textField.text?.isEmpty ?? false) {
+            listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
+            tableView.reloadData()
+            blockedDrawButton()
+        }
+        textField.text = ""
         return true
     }
 }
