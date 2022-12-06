@@ -19,10 +19,7 @@ class HomeVC: UIViewController {
     var viewModel: HomeViewModel = HomeViewModel()
     
     
-    //DICA: Remover todos os objetos da homevc pois devem permanecer private na viewmodel.
-    var listPerson: [Person] = []
-    var listImage: [String] = ["Image-1", "Image-2", "Image-3", "Image-4", "Image-5"]
-    var person: Person?
+
     var alert: AlertController?
     
     override func viewDidLoad() {
@@ -107,7 +104,7 @@ extension HomeVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if !(textField.text?.isEmpty ?? false) {
-            listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
+            viewModel.addPerson(name: textField.text ?? "")
             tableView.reloadData()
             blockedDrawButton()
         }
