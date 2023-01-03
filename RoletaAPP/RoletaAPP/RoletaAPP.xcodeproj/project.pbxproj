@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3A660C2A293E4434006BD4F7 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A660C29293E4434006BD4F7 /* AlertController.swift */; };
 		3A660C2E293E57B3006BD4F7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A660C2D293E57B3006BD4F7 /* HomeViewModel.swift */; };
+		3A7A3FB529645067000D7DAE /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A3FB429645067000D7DAE /* HistoryVC.swift */; };
+		3A7A3FB829645280000D7DAE /* History.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A7A3FB729645280000D7DAE /* History.json */; };
+		3A7A3FBA29645869000D7DAE /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A3FB929645869000D7DAE /* History.swift */; };
+		3A7A3FBD29646510000D7DAE /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A3FBC29646510000D7DAE /* HistoryViewModel.swift */; };
+		3A7A3FC0296466AF000D7DAE /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A3FBF296466AF000D7DAE /* HistoryService.swift */; };
+		3A7A3FC229646895000D7DAE /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A3FC129646895000D7DAE /* GenericService.swift */; };
 		3AADDCC62938D1A10020CFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADDCC52938D1A10020CFF8 /* AppDelegate.swift */; };
 		3AADDCC82938D1A10020CFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADDCC72938D1A10020CFF8 /* SceneDelegate.swift */; };
 		3AADDCCA2938D1A10020CFF8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADDCC92938D1A10020CFF8 /* HomeVC.swift */; };
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		3A660C29293E4434006BD4F7 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		3A660C2D293E57B3006BD4F7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3A7A3FB429645067000D7DAE /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		3A7A3FB729645280000D7DAE /* History.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = History.json; sourceTree = "<group>"; };
+		3A7A3FB929645869000D7DAE /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		3A7A3FBC29646510000D7DAE /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		3A7A3FBF296466AF000D7DAE /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		3A7A3FC129646895000D7DAE /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
 		3AADDCC22938D1A10020CFF8 /* RoletaAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoletaAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AADDCC52938D1A10020CFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AADDCC72938D1A10020CFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +88,40 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		3A7A3FB32964502B000D7DAE /* History */ = {
+			isa = PBXGroup;
+			children = (
+				3A7A3FBB296464DE000D7DAE /* ViewModel */,
+				3A7A3FB429645067000D7DAE /* HistoryVC.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		3A7A3FB62964523E000D7DAE /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				3A7A3FB729645280000D7DAE /* History.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		3A7A3FBB296464DE000D7DAE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A7A3FBC29646510000D7DAE /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3A7A3FBE296465E2000D7DAE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3A7A3FBF296466AF000D7DAE /* HistoryService.swift */,
+				3A7A3FC129646895000D7DAE /* GenericService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		3AADDCB92938D1A10020CFF8 = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +141,12 @@
 		3AADDCC42938D1A10020CFF8 /* RoletaAPP */ = {
 			isa = PBXGroup;
 			children = (
+				3A7A3FBE296465E2000D7DAE /* Service */,
+				3A7A3FB32964502B000D7DAE /* History */,
 				3A660C2B293E577A006BD4F7 /* Home */,
 				3A660C28293E43D4006BD4F7 /* Alert */,
 				3AADDCE42939AEF90020CFF8 /* Model */,
+				3A7A3FB62964523E000D7DAE /* Json */,
 				3AADDCD92938DB2E0020CFF8 /* Cell */,
 				3AADDCC52938D1A10020CFF8 /* AppDelegate.swift */,
 				3AADDCC72938D1A10020CFF8 /* SceneDelegate.swift */,
@@ -140,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				3AADDCE52939AF0F0020CFF8 /* Person.swift */,
+				3A7A3FB929645869000D7DAE /* History.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +256,7 @@
 				3AADDCDD2938DB4A0020CFF8 /* EmptyTableViewCell.xib in Resources */,
 				3AADDCCF2938D1A10020CFF8 /* Assets.xcassets in Resources */,
 				3AADDCCD2938D1A10020CFF8 /* Main.storyboard in Resources */,
+				3A7A3FB829645280000D7DAE /* History.json in Resources */,
 				3AADDCE32939A8BB0020CFF8 /* PersonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,11 +270,16 @@
 			files = (
 				3AADDCE62939AF0F0020CFF8 /* Person.swift in Sources */,
 				3AADDCCA2938D1A10020CFF8 /* HomeVC.swift in Sources */,
+				3A7A3FBD29646510000D7DAE /* HistoryViewModel.swift in Sources */,
 				3AADDCDC2938DB4A0020CFF8 /* EmptyTableViewCell.swift in Sources */,
 				3A660C2E293E57B3006BD4F7 /* HomeViewModel.swift in Sources */,
+				3A7A3FBA29645869000D7DAE /* History.swift in Sources */,
+				3A7A3FC229646895000D7DAE /* GenericService.swift in Sources */,
 				3AADDCC62938D1A10020CFF8 /* AppDelegate.swift in Sources */,
 				3A660C2A293E4434006BD4F7 /* AlertController.swift in Sources */,
 				3AADDCE22939A8BB0020CFF8 /* PersonTableViewCell.swift in Sources */,
+				3A7A3FB529645067000D7DAE /* HistoryVC.swift in Sources */,
+				3A7A3FC0296466AF000D7DAE /* HistoryService.swift in Sources */,
 				3AADDCC82938D1A10020CFF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

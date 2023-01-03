@@ -8,17 +8,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--History-->
         <scene sceneID="pfS-iM-wSy">
             <objects>
-                <viewController id="klX-xd-OCn" sceneMemberID="viewController">
+                <viewController id="klX-xd-OCn" customClass="HistoryVC" customModule="RoletaAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IS4-d3-Bul">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Sjg-2f-wDb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="yKF-8F-sid"/>
+                    <tabBarItem key="tabBarItem" title="History" image="person.crop.square" catalog="system" id="yKF-8F-sid"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqg-yc-h0Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +82,7 @@
                             <constraint firstItem="xbL-s6-fpD" firstAttribute="bottom" secondItem="qSc-Y5-zqg" secondAttribute="bottom" id="ngX-wG-RBo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Roleta" id="EAC-T8-pcK"/>
+                    <tabBarItem key="tabBarItem" title="Roleta" image="sportscourt.circle.fill" catalog="system" id="EAC-T8-pcK"/>
                     <connections>
                         <outlet property="drawNumberButton" destination="TGS-fa-U1z" id="eqe-by-FUR"/>
                         <outlet property="logoAppImageView" destination="fD8-GN-mQq" id="p3R-NP-dcD"/>
@@ -115,6 +115,8 @@
     </scenes>
     <resources>
         <image name="card" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="person.crop.square" catalog="system" width="128" height="114"/>
+        <image name="sportscourt.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
